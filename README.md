@@ -59,3 +59,13 @@ This repository serves as a template for creating and hosting multiple [Slidev](
   ```sh
   pnpm --filter "./slides/<your-slide-name>" run build --base "./<your-slide-name>" -o "dist/<your-slide-name>"
   ```
+
+## 🛠️ Troubleshooting
+
+- **Using Custom Domain in Github Pages**
+
+If you're using custom domain, eg. `talks.domain.com`, we need to update the base to correctly load the assets. In `.github/workflows/deploy.yml`, update `line 50` to:
+
+```sh
+pnpm --filter "./slides/$slide" run build --base "/$slide" -o "../../dist/$slide"
+```
