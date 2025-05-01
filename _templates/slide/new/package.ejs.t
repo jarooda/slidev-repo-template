@@ -1,5 +1,8 @@
+---
+to: slides/<%= name %>/package.json
+---
 {
-  "name": "example",
+  "name": "<%= name %>",
   "type": "module",
   "private": true,
   "scripts": {
@@ -8,3 +11,5 @@
     "export": "slidev export"
   }
 }
+
+

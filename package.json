@@ -1,6 +1,15 @@
 {
   "private": true,
   "scripts": {
-    "build": "node scripts/build.js"
+    "new:slide": "npx hygen slide new --name"
+  },
+  "dependencies": {
+    "@slidev/cli": "^51.3.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "hygen": "^6.2.11"
   }
 }
