@@ -16,12 +16,9 @@ This repository serves as a template for creating and hosting multiple [Slidev](
 3. **Add a New Slide**  
    Run the following command to create a new Slidev presentation:  
    ```sh
-   pnpm create slidev
+   pnpm run new:slide <your-slide-name>
    ```
-   When prompted for the `Project name`, enter:  
-   ```
-   slides/<your-slide-name>
-   ```
+   It will automatically create a folder `slides/<your-slide-name>`
 
 4. **Commit and Push to GitHub**  
    ```sh
